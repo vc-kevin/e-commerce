@@ -10,7 +10,6 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(router);
-
 const port = 3333;
 app.listen(port, () => {
   console.log(`The server is listening on port ${port}`);

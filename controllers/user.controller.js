@@ -1,6 +1,6 @@
 const User = require('../models/user.schema');
 
-exports.getUsers = async function getUser(_, res) {
+exports.getUsers = async (_, res) => {
   try {
     const userList = await User.find({}, { password: 0 });
     res.status(200).send({

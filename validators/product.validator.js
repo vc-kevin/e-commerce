@@ -6,6 +6,7 @@ function validateProduct(req, res, next) {
     brand: joi.string().required(),
     price: joi.number().required(),
     category: joi.string().required(),
+    description: joi.string(),
     quantity: joi.number().required()
   });
 
